@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <title>Волонтёры 800</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/events-page.css">
+    <link rel="stylesheet" href="css/volunteerRussian/style.css">
+    <link rel="stylesheet" href="css/volunteerRussian/index.css">
+    <link rel="stylesheet" href="css/volunteerRussian/volunteer.css">
+    <script defer="" src="js/libs/jquery.min.js"></script>
+    <script defer="" src="js/libs/jq-inputmask.min.js"></script>
+    <script defer="" src="js/libs/jquery.validate.js"></script>
+    <script defer="" src="js/libs/datatables.js"></script>
+    <script defer="" src="js/libs/datepicker.js"></script>
+    <script defer="" src="js/libs/swiper.min.js"></script>
+    <script defer="" src="js/libs/pristie.js"></script>
+    <script defer="" src="js/libs/gsap.min.js"></script>
+    <script defer="" src="js/libs/ScrollTrigger.min.js"></script>
+    <script defer="" src="js/libs/air-datepicker.js"></script>
+    <script defer="" src="js/loadmore.min.js"></script>
+    <script defer="" src="js/main.js"></script>
+    <script defer="" src="js/volunteerRussian/volunteer.js"></script>
+</head>
+
+<body class="page__body">
+    <div class="site-container">
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="/" class="header__logo">
+                <picture><source srcset="img/logo-w-2.webp" type="image/webp"><img src="img/logo-w-2.png" alt="Нижний" width="162" height="45"></picture>
+            </a>
+            <nav class="nav" data-menu="">
+                <ul id="menu-header-nolink" class="nav__list list-reset">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#project" class="js-anchor nav__link">О проекте</a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent">
+                        <a href="#about" class="js-anchor nav__link">О волонтёрах 800</a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent">
+                        <a href="#faq" class="js-anchor nav__link">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__wrap">
+                <a href="#" type="button" class="login">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.9987 31.9999C15.832 31.9999 12.1487 29.8666 9.9987 26.6666C10.0487 23.3333 16.6654 21.4999 19.9987 21.4999C23.332 21.4999 29.9487 23.3333 29.9987 26.6666C27.8487 29.8666 24.1654 31.9999 19.9987 31.9999ZM19.9987 8.33325C21.3248 8.33325 22.5966 8.86004 23.5342 9.79772C24.4719 10.7354 24.9987 12.0072 24.9987 13.3333C24.9987 14.6593 24.4719 15.9311 23.5342 16.8688C22.5966 17.8065 21.3248 18.3333 19.9987 18.3333C18.6726 18.3333 17.4008 17.8065 16.4632 16.8688C15.5255 15.9311 14.9987 14.6593 14.9987 13.3333C14.9987 12.0072 15.5255 10.7354 16.4632 9.79772C17.4008 8.86004 18.6726 8.33325 19.9987 8.33325ZM19.9987 3.33325C17.81 3.33325 15.6427 3.76435 13.6206 4.60193C11.5985 5.4395 9.76123 6.66716 8.21358 8.21481C5.08798 11.3404 3.33203 15.5796 3.33203 19.9999C3.33203 24.4202 5.08798 28.6594 8.21358 31.785C9.76123 33.3327 11.5985 34.5603 13.6206 35.3979C15.6427 36.2355 17.81 36.6666 19.9987 36.6666C24.419 36.6666 28.6582 34.9106 31.7838 31.785C34.9094 28.6594 36.6654 24.4202 36.6654 19.9999C36.6654 10.7833 29.1654 3.33325 19.9987 3.33325Z" fill="white"></path>
+                    </svg>
+                </a>
+                <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger="">
+                    <svg width="43" height="35" viewBox="0 0 43 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.91665C0 1.30583 1.28345 0 2.86667 0H40.1333C41.7165 0 43 1.30583 43 2.91665C43 4.52747 41.7165 5.8333 40.1333 5.8333H2.86667C1.28345 5.8333 0 4.52747 0 2.91665ZM0 17.4997C0 15.8889 1.28345 14.5831 2.86667 14.5831H40.1333C41.7165 14.5831 43 15.8889 43 17.4997C43 19.1105 41.7165 20.4164 40.1333 20.4164H2.86667C1.28345 20.4164 0 19.1105 0 17.4997ZM2.86667 29.1666C1.28345 29.1666 0 30.4725 0 32.0833C0 33.6941 1.28345 34.9999 2.86667 34.9999H40.1333C41.7165 34.9999 43 33.6941 43 32.0833C43 30.4725 41.7165 29.1666 40.1333 29.1666H2.86667Z" fill="white"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>        
+        <section class="first-section first-section--russian">
+            <div class="first-section__wrapper">
+              <div class="container container--offset">
+                <div class="first-section__wrap first-section__wrap--russian">
+                  <h1 class="first-section__title first-section__title--russian">
+                    Волонтёры Молодёжной столицы из России
+                  </h1>
+                  <div class="first-section__text first-section__text--russian">
+                    <p>
+                      Специальный проект для опытных волонтёров со всей страны, которые смогут принять участие в масштабных событиях Нижнего Новгорода.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section><!--main-->  
+        <main class="main main--secondary">
+            <div class="main-section" id="project">
+              <div class="container container--offset">
+                <div class="main-section__wrapper main-section__wrapper--russian">
+                  <div class="main-section__text main-section__text--russian">
+                    <p>
+                      Проект <span class="main-section__text--red">«Волонтёры Молодёжной столицы из России»</span> стартует <span class="main-section__text--red">19 июня</span> и продлится до <span class="main-section__text--red">24 августа</span>. 
+                       Основные требования к участникам: возраст <span class="main-section__text--red">от 18 до 35 лет</span>, опыт в событийном направлении волонтёрской деятельности, горящее доброе сердце и желание помогать.
+                    </p>
+                    <p>
+                      Добровольцы будут участвовать во множестве мероприятий, приуроченных к титулу «Молодёжной столицы России» в
+                      составе «Волонтёров 800». Уже слаженная нижегородская команда была частью организации 800-летия города, Новогодней столицы России — 2022, 200-летия Нижегородской ярмарки, фестиваля «Столица закатов» и отдельных массовых событий. В 2023 году волонтёры помогут в организации конференций, образовательных и научных форумов, фестивалей, спортивных мероприятий и других крутых проектов. </p>
+                    <p>
+                      Волонтёры поддерживают и благотворительные инициативы: участвуют в событиях проекта «Добрые дела», посещают
+                      приют для животных, помогают в организации мероприятий для взрослых и детей с ОВЗ.
+                    </p>
+                    <p>
+                      При подаче заявки на сайте участник может выбрать одну из четырёх смен продолжительностью 14 дней. В каждую
+                      принимается по 25 человек. Для отобранных волонтёров будет составлен индивидуальный график выхода на
+                      мероприятия.
+                    </p>
+                  </div>
+          
+                  <div class="main-section__text main-section__text--russian">
+                    <div class="main-section__wrap">
+                      <h3 class="main-section__title">
+                        Расписание смен:
+                      </h3>
+                      <ul class="main__section-list list-reset">
+                        <li>
+                          1-я смена 19 июня — 3 июля (заявки принимались до 4 июня)
+                        </li>
+                        <li>
+                          2-я смена 6 июля — 20 июля (заявки принимались до 18 июня)
+                        </li>
+                        <li>
+                          3-я смена 24 июля — 7 августа (заявки принимались до 18 июня)
+                        </li>
+                        <li>
+                          4-я смена 10 августа — 24 августа (заявки принимались до 18 июня)
+                        </li>
+                      </ul>
+                    </div>
+                    <p>
+                      Организаторы проекта обеспечивают проживание, питание и страхование участников. А ещё волонтёры
+                      Молодёжной столицы из России получат брендированную экипировку, сувенирную продукцию, транспортную карту на
+                      всё время смены.
+                    </p>
+                    <p>
+                      Станьте одним из тех, кто войдёт в историю первой Молодёжной столицы России и получите бесценный опыт!
+                    </p>
+                  </div>
+                </div>
+                <div class="main-section__img">
+                  <picture>
+                    <source media="(min-width:768px)" srcset="img/volunteerRussian/volunteer/volunter-section/valounterr-russian.png">
+                    <img src="img/volunteerRussian/volunteer/volunter-section/7B7A23091.jpg" alt="" width="1120" height="560">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <section class="valounteer-about" id="about">
+              <div class="container container--offset">
+                <h2 class="valounteer-about__title section-title">
+                  О Волонтёрах Молодёжной столицы из России
+                </h2>
+                <div class="who">
+                  <h3 class="who__title section-subtitle">
+                    Волонтёр — кто он?
+                  </h3>
+                  <div class="who__wrapper">
+                    <div class="who__item who__item--red">
+                      <div class="who__icon">
+                        <img src="img/volunteerRussian/volunteer/about/who/who-1-red.svg" alt="" width="101" height="95">
+                      </div>
+                      <div class="who__text">
+                        Житель РФ в возрасте от 18 до 35 лет
+                      </div>
+                    </div>
+                    <div class="who__item who__item--red">
+                      <div class="who__icon">
+                        <img src="img/volunteerRussian/volunteer/about/who/who-2-red.svg" alt="" width="101" height="95">
+                      </div>
+                      <div class="who__text">
+                        Хочет стать частью истории Нижнего Новгорода
+                      </div>
+                    </div>
+                    <div class="who__item who__item--red">
+                      <div class="who__icon">
+                        <img src="img/volunteerRussian/volunteer/about/who/who-3-red.svg" alt="" width="101" height="95">
+                      </div>
+                      <div class="who__text">
+                        Имеет активную жизненную позицию
+                      </div>
+                    </div>
+                    <div class="who__item who__item--red">
+                      <div class="who__icon">
+                        <img src="img/volunteerRussian/volunteer/about/who/who-4-red.svg" alt="" width="101" height="95">
+                      </div>
+                      <div class="who__text">
+                        Хочет помогать
+                        людям
+                      </div>
+                    </div>
+                    <div class="who__item who__item--red">
+                      <div class="who__icon">
+                        <img src="img/volunteerRussian/volunteer/about/who/who-5-red.svg" alt="" width="101" height="95">
+                      </div>
+                      <div class="who__text">
+                        Умеет работать
+                        в команде
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="functions">
+                  <h3 class="functions__title section-subtitle">
+                    Функциональные направления деятельности:
+                  </h3>
+                  <div class="functions__wrapper">
+                    <div class="functions__item functions__item--red">
+                      <div class="functions__icon">
+                        <img src="img/volunteerRussian/volunteer/about/functions/functions-1-red.svg" alt="" width="89" height="89">
+                      </div>
+                      <div class="functions__text">
+                        Навигация
+                      </div>
+                    </div>
+                    <div class="functions__item functions__item--red">
+                      <div class="functions__icon">
+                        <img src="img/volunteerRussian/volunteer/about/functions/functions-2-red.svg" alt="" width="89" height="89">
+                      </div>
+                      <div class="functions__text">
+                        Прибытия и отъезды
+                      </div>
+                    </div>
+                    <div class="functions__item functions__item--red">
+                      <div class="functions__icon">
+                        <img src="img/volunteerRussian/volunteer/about/functions/functions-3-red.svg" alt="" width="89" height="89">
+                      </div>
+                      <div class="functions__text">
+                        Взаимодействия со СМИ
+                      </div>
+                    </div>
+                    <div class="functions__item functions__item--red">
+                      <div class="functions__icon">
+                        <img src="img/volunteerRussian/volunteer/about/functions/functions-4-red.svg" alt="" width="89" height="89">
+                      </div>
+                      <div class="functions__text">
+                        Информирование
+                      </div>
+                    </div>
+                    <div class="functions__item functions__item--red">
+                      <div class="functions__icon">
+                        <img src="img/volunteerRussian/volunteer/about/functions/functions-5-red.svg" alt="" width="89" height="89">
+                      </div>
+                      <div class="functions__text">
+                        Гостеприимство
+                      </div>
+                    </div>
+                    <div class="functions__item functions__item--red">
+                      <div class="functions__icon">
+                        <img src="img/volunteerRussian/volunteer/about/functions/functions-6-red.svg" alt="" width="89" height="89">
+                      </div>
+                      <div class="functions__text">
+                        Социальные проекты
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="advantages">
+                  <h3 class="advantages__title section-subtitle">Что получает волонтёр?</h3>
+                  <div class="advantages__wrapper advantages__wrapper--red">
+                    <ul class="advantages__list list-reset">
+                      <li class="advantages__item advantages__item--red">
+                        Проживание и питание
+                      </li>
+                      <li class="advantages__item advantages__item--red">
+                        Экипировку и сувенирную продукцию
+                      </li>
+                      <li class="advantages__item advantages__item--red">
+                        Страхование жизни от несчастных случаев во время смен
+                      </li>
+                      <li class="advantages__item advantages__item--red">
+                        Транспортную карту Нижнего Новгорода
+                      </li>
+                    </ul>
+                    <ul class="advantages__list list-reset">
+                      <li class="advantages__item advantages__item--red">
+                        Профессиональные навыки и новые знакомства
+                      </li>
+                      <li class="advantages__item advantages__item--red">
+                        Участие во внутренних событиях волонтёрского движения
+                      </li>
+                      <li class="advantages__item advantages__item--red">
+                        Верифицированные часы на сайте Добро.ру
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="volunteer-questions" id="faq">
+              <div class="container container--offset">
+                <h2 class="volunteer-questions__title section-title">
+                  Часто задаваемые вопросы
+                </h2>
+                <div class="accordion accordion--red">
+                  <button class="accordion__control" aria-expanded="false">
+                    <span class="accordion__title">Кто может стать Волонтёром?</span>
+                    <div class="accordion__icon">
+                      <img src="img/volunteerRussian/icon/accord-icon-red.svg" alt="" width="54" height="54">
+                    </div>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true">
+                    <div class="accordion__text">
+                      <p class="txt">
+                        Волонтёром Молодежной столицы из России может стать любой желающий, имеющий опыт событийного направления волонтёрской деятельности, в возрасте от 18 до 35 лет <span style="color: #F4283C;">включительно</span> (вне
+                        зависимости от гражданства), проживающий на территории Российской Федерации. Главное — готовность помогать людям, умение работать в команде и, конечно, желание стать частью истории Нижнего Новгорода.
+          
+                      </p>
+                    <br>
+                     <p>Если вы проживаете в Нижегородской области, подавайте заявку в «Волонтёры 800» <a href="volunteers.html" style='color: #F4283C;    border-bottom: 1px solid #F4283C;'>&#171;здесь&#187;</a></p> 
+          
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion accordion--red">
+                  <button class="accordion__control" aria-expanded="false">
+                    <span class="accordion__title">Как стать Волонтёром?</span>
+                    <div class="accordion__icon">
+                      <img src="img/volunteerRussian/icon/accord-icon-red.svg" alt="" width="54" height="54">
+                    </div>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true">
+                    <div class="accordion__text">
+                      <p class="txt">Предварительный этап отбора:</p>
+                      <ul class="main__section-list list-reset">
+                        <li>
+                          <!-- <a href="https://volunteers.nn-young.ru/registraciya.html"  > -->
+                          Зарегистрироваться на сайте 
+                        <!-- </a>  -->
+                      </li>
+                        <li>Заполнить анкету волонтёра</li>
+                        <li>Дождаться письма на электронную почту с результатами предварительного отбора</li>
+                      </ul>
+                      <p class="txt">Основной этап отбора:</p>
+                      <ul class="main__section-list list-reset">
+                        <li>Пройти онлайн-собеседование</li>
+                        <li>Пройти общую подготовку в онлайн-формате</li>
+                        <li>Успешно пройти тестирование</li>
+                        <li>Пройти в основной состав команды Волонтёров</li>
+                      </ul>
+                     <p>Если вы проживаете в Нижегородской области, подавайте заявку в «Волонтёры 800» <a href="volunteers.html" style='color: #F4283C;    border-bottom: 1px solid #F4283C;'>&#171;здесь&#187;</a></p> 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion accordion--red">
+                  <button class="accordion__control" aria-expanded="false">
+                    <span class="accordion__title">Куда обратиться с вопросом про проект?</span>
+                    <div class="accordion__icon">
+                      <img src="img/volunteerRussian/icon/accord-icon-red.svg" alt="" width="54" height="54">
+                    </div>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true">
+                    <div class="accordion__text">
+                      <p class="txt">
+                        По любому интересующему вас вопросу необходимо писать на почту: <a href="mailto:volunteer@nizhny800.ru">volunteer@nizhny800.ru</a> 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          
+            
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__wrap">
+                <a class="footer__logo">
+                    <picture><source srcset="img/logo-w-2.webp" type="image/webp"><img src="img/logo-w-2.png" alt="Нижний" width="162" height="45"></picture>
+                </a>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu--item">
+                    <a href="#project" class="js-anchor footer-link">
+                        О проекте
+                    </a>
+                </div>
+                <div class="footer__menu--item">
+                    <a href="#about" class="js-anchor footer-link">
+                        О волонтёрах 800
+                    </a>
+                </div>
+                <div class="footer__menu--item">
+                    <a href="#faq" class="js-anchor footer-link">
+                        FAQ
+                    </a>
+                </div>
+            </div>
+            <ul class="socials list-reset">
+                    <li>
+                        <a href="https://vk.com/volunteers800" target="_blank" class="socials__link">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.2178 23.1818C6.89975 23.1818 1.58498 17.0392 1.36353 6.81812H6.03106C6.18438 14.3202 9.62532 17.4979 12.3509 18.1531V6.81812H16.746V13.2882C19.4375 13.0098 22.265 10.0614 23.2189 6.81812H27.614C26.8815 10.8148 23.8152 13.7632 21.6348 14.9754C23.8152 15.9582 27.3075 18.5298 28.6363 23.1818H23.7982C22.7591 20.0695 20.17 17.6617 16.746 17.3341V23.1818H16.2178Z" fill="#8A94F3"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/nizhny800" target="_blank" class="socials__link">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.32092 14.2601C10.5437 11.3735 14.6932 9.4705 16.7695 8.55105C22.6975 5.92584 23.9293 5.46981 24.7322 5.45475C24.9087 5.45144 25.3036 5.49803 25.5593 5.71899C25.7753 5.90555 25.8347 6.15758 25.8631 6.33447C25.8915 6.51136 25.927 6.91431 25.8988 7.22917C25.5776 10.8229 24.1876 19.5439 23.4804 23.5689C23.1812 25.2721 22.592 25.8431 22.0216 25.899C20.782 26.0205 19.8407 25.0268 18.6401 24.1888C16.7613 22.8776 15.7 22.0614 13.8763 20.7819C11.7688 19.3032 13.135 18.4905 14.3361 17.1623C14.6504 16.8147 20.1122 11.5253 20.2179 11.0455C20.2311 10.9855 20.2434 10.7618 20.1186 10.6437C19.9937 10.5256 19.8095 10.566 19.6766 10.5981C19.4882 10.6436 16.4869 12.7557 10.6727 16.9344C9.8208 17.5573 9.04917 17.8607 8.35781 17.8448C7.59565 17.8273 6.12955 17.386 5.03965 17.0088C3.70286 16.5461 2.64039 16.3015 2.73291 15.5158C2.7811 15.1065 3.31044 14.688 4.32092 14.2601Z" fill="#8A94F3"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        <div class="footer__bottom">
+             <div class="footer__links">
+                <a href="#" target="_blank" class="footer__link">
+                    <span>Политика конфиденциальности</span>
+                </a>
+                <a href="#" target="_blank" class="footer__link">
+                    <span> Пользовательское соглашение</span>
+                </a>
+            </div>
+            <div class="footer__copyright">
+                © АНО «Центр 800»
+            </div>
+            <a href="//OmniAgency.ru" target="_blank" class="footer__link footer__link--nounderline">
+                <span>Создание сайта OmniAgency.ru</span>
+            </a>
+        </div>
+    </div>
+</footer>
+        <div class="modals">
+    <div class="overlay js-overlay"></div>
+    <div class="popup popup--succsess js-popup" data-popup="some-popup">
+        <button type="button" class="popup__close js-popup-close btn-reset"></button>
+        <div class="popup__wrap">
+            <div class="poupp__head">
+                <h3 class="popup__title">Успешно</h3>
+                <img class="popup__icon" src="img/icon/ok.svg" alt="" width="56" height="52">
+            </div>
+            <div class="popup__text">
+                <p>Благодарим вас за предложенные идеи! Менеджер свяжется с вами в ближайшее время.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</body>
+
+</html>

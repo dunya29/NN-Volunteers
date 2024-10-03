@@ -1,0 +1,23 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 501;
+    background: $maincolor;
+    transition: transform .4s ease-out;
+    &.scroll {
+        &.unshow .header__inner {
+            transform: translateY(-100%);
+        }
+    }
+    &--main {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 40.48%, rgba(0, 0, 0, 0) 100%);
+        .header__logo a {
+            pointer-events: none;
+        }
+    }
+    &__inner {
+        padding: 20px 0;
+    }
+}

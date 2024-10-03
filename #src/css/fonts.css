@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Forma DJR Cyrillic Micro';
+    src: local('Forma DJR Cyrillic Micro Regular'), local('Forma-DJR-Cyrillic-Micro-Regular'),
+        url('../fonts/FormaDJRCyrillicMicro-Regular.woff2') format('woff2'),
+        url('../fonts/FormaDJRCyrillicMicro-Regular.woff') format('woff'),
+        url('../fonts/FormaDJRCyrillicMicro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  } 
+@font-face {
+    font-family: 'Forma DJR Cyrillic';
+    src: local('Forma DJR Cyrillic Regular'), local('Forma-DJR-Cyrillic-Regular'),
+        url('../fonts/FormaDJRText-Regular-Web.woff2') format('woff2'),
+        url('../fonts/FormaDJRText-Regular-Web.woff') format('woff'),
+        url('../fonts/FormaDJRText-Regular-Web.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
